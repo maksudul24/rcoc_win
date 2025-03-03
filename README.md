@@ -19,6 +19,8 @@ Installation
 ------------
 * Manual
   * Copy `plugin/rabat.vim` to `~/.vim/plugin`
+
+
 Mappings
 ---------
 Copy this to you _vimrc
