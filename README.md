@@ -20,7 +20,7 @@ Copy this code to you _vimrc
 nnoremap <M-b> :call RabatCompileCode()<CR><br>
 <br>
 "open the terminal right<br>
-nnoremap <M-t> :call RabatOpenTerminalRight()<CR><br>
+<p>nnoremap <M-t> :call RabatOpenTerminalRight()<CR></p><br>
 <br>
 "this will run code with input<br>
 nnoremap <M-e> :call RabatRunCodeWithInput()<CR><br>
