@@ -18,8 +18,9 @@ Copy this code to you _vimrc
 
 Mappings
 ---------
-"this portion will compile code
+Copy this to you _vimrc
 ```vim
+"this portion will compile code
 nnoremap <M-b> :call RabatCompileCode()<CR>
 
 "open the terminal right
