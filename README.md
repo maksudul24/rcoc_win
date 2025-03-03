@@ -14,7 +14,6 @@ Just copy and paste the "_vimrc" to _vimrc windows
 5.'Alt + i' will copy input from clipboard<br>
 6.'Alt + p' will paste the code in current tab with added //open_file <br>
 
-Copy this code to you _vimrc
 Installation
 ------------
 * Manual
