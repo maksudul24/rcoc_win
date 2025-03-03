@@ -15,9 +15,11 @@ Just copy and paste the "_vimrc" to _vimrc windows
 6.'Alt + p' will paste the code in current tab with added //open_file <br>
 
 Copy this code to you _vimrc
-<p> 
+
+Mappings
+---------
 "this portion will compile code
-<code>
+```vim
 nnoremap <M-b> :call RabatCompileCode()<CR>
 
 "open the terminal right
@@ -44,5 +46,4 @@ nnoremap <M-n> :call RabatNewTab()<CR>
 
 "optional the last window will not be a terminal
 "autocmd BufEnter * if winnr('$') == 1 && &buftype == 'terminal' | quit! | endif
-</code>
-</p>
+```
