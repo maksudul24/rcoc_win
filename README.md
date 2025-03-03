@@ -15,7 +15,10 @@ Just copy and paste the "_vimrc" to _vimrc windows
 6.'Alt + p' will paste the code in current tab with added //open_file <br>
 
 Copy this code to you _vimrc
-
+Installation
+------------
+* Manual
+  * Copy `plugin/rabat.vim` to `~/.vim/plugin`
 Mappings
 ---------
 Copy this to you _vimrc
