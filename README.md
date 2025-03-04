@@ -3,7 +3,7 @@ rcoc
 ==========
 #### Requirments:
 - vim editor 8+ with terminal and g++ compiler enabled in windows command line.
-- Check typing "g++ --version" on command line
+- Check typing ```vim g++ --version``` on command line
 
 #### Opertation:
 - Just copy and paste the mapping in "_vimrc" in windows
