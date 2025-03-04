@@ -2,7 +2,7 @@ rcoc
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/AnotherProksY/ez-window/blob/master/LICENSE)
 ==========
 #### Requirments:
-- vim editor 8+ with terminal and g++ compiler enabled windows command line. <br>
+- vim editor 8+ with terminal and g++ compiler enabled windows in command line. <br>
 
 #### Opertation:
 - Just copy and paste the "_vimrc" to _vimrc windows
