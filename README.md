@@ -21,7 +21,7 @@ rcoc
 Installation
 ------------
 * Manual
-  * Copy `plugin/rabat.vim` to `~/.vim/plugin`
+  * Copy `plugin/rabat.vim` to `$HOME/vimfiles/plugin`
 
 
 Mappings
