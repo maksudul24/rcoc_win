@@ -18,7 +18,7 @@ rcoc
 - 'Alt + e' will run the code with input
 - 'Alt + i' will copy input from clipboard
 - 'Alt + p' will paste the code in current tab with added '//' to your chosen line or word (Example: it replaces "open_file;" to "//open_file;" from template.)
-
+- 'Alt + m' will clear the terminal screen
 Installation
 ------------
 * Manual
@@ -53,6 +53,9 @@ nnoremap <M-o> :call RabatOpenCode()<CR>
 "Create new filename by just copying(it sets the file name from clipboard),
 "use Alt + n
 nnoremap <M-n> :call RabatNewTab()<CR>
+
+"Clears the terminal screen, use Alt + m
+nnoremap <M-m> :call RabatClearTerminal()<CR>
 
 "optional the last window will not be a terminal
 "autocmd BufEnter * if winnr('$') == 1 && &buftype == 'terminal' | quit! | endif
