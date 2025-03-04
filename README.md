@@ -9,8 +9,8 @@ rcoc
 - Just copy and paste the mapping in "_vimrc" in windows
 
 
-*Vim integration
-----------------
+Vim integration
+---------------
 
 - 'Alt + n' will copy the filename from clipboard and open new file tab
 - 'Alt + b' will compile the code in current tab and genrate 'a'
