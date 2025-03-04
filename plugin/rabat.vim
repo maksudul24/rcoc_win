@@ -66,7 +66,11 @@ function! RabatOpenCode()
     let tabname = tabname . ".cpp"
 
     if !filereadable(tabname)
-        let template_code = readfile("template.cpp")
+        let tempfile = "template.cpp"
+        if !filereadable(tempfile)
+            call writefile('',tempfile)
+        endif
+        let template_code = readfile(tempfile)
         call writefile(template_code,tabname)
     endif
 
@@ -84,7 +88,11 @@ function! RabatNewTab()
     let tabname = tabname . ".cpp"
 
     if !filereadable(tabname)
-        let template_code = readfile("template.cpp")
+        let tempfile = "template.cpp"
+        if !filereadable(tempfile)
+            call writefile('',tempfile)
+        endif
+        let template_code = readfile(tempfile)
         call writefile(template_code,tabname)
     endif
 
