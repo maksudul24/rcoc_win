@@ -40,8 +40,8 @@ nnoremap <M-i> :call RabatCopyInput()<CR>
 "this will just run the code binary, use Alt + r
 nnoremap <M-r> :call RabatRunCode()<CR>
 
-"this will paste the code with added '//open_file'
-nnoremap <M-p> :call RabatPasteCode()<CR>
+"this will paste the code to clipboard with added with replace with 'open_file;' to '//open_file;' 
+nnoremap <M-p> :call RabatPasteCode("open_file;","//open_file;")<CR>
 
 "Open Code with the given filename, use Alt + o
 nnoremap <M-o> :call RabatOpenCode()<CR>
