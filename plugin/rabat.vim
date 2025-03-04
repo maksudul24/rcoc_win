@@ -114,3 +114,12 @@ function! RabatCompileCode()
         call term_sendkeys(buf,instruction)
 endfunction
 
+function! RabatClearTerminal() 
+  let term_buffers = term_list()
+
+  if !empty(term_buffers)
+      let buf = term_buffers[0]
+      call term_sendkeys(buf,"cls\<CR>")
+  endif
+endfunction
+
