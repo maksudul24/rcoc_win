@@ -12,7 +12,7 @@ Just copy and paste the "_vimrc" to _vimrc windows
 3.'Alt + r' will run a<br>
 4.'Alt + e' will run the code with input<br>
 5.'Alt + i' will copy input from clipboard<br>
-6.'Alt + p' will paste the code in current tab with added '//' to your chosen line or word (Example: it replaces "open_file;" to "//open_file" from template.)<br>
+6.'Alt + p' will paste the code in current tab with added '//' to your chosen line or word (Example: it replaces "open_file;" to "//open_file;" from template.)<br>
 
 Installation
 ------------
