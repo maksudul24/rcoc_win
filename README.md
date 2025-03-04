@@ -5,7 +5,7 @@ rcoc
 - vim editor 8+ with terminal and g++ compiler enabled windows in command line. <br>
 
 #### Opertation:
-- Just copy and paste the "_vimrc" to _vimrc windows
+- Just copy and paste the mapping in "_vimrc" in windows
 
 
 *Vim integration
