@@ -19,6 +19,7 @@ rcoc
 - 'Alt + i' will copy input from clipboard
 - 'Alt + p' will paste the code in current tab with added '//' to your chosen line or word (Example: it replaces "open_file;" to "//open_file;" from template.)
 - 'Alt + m' will clear the terminal screen
+  
 Installation
 ------------
 * Manual
