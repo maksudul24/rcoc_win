@@ -9,16 +9,17 @@ rcoc
 - Just copy and paste the mapping in "_vimrc" in windows
 
 
-*Vim integration
-----------------
+Vim integration
+---------------
 
-- 'Alt + n' will copy the filename from clipboard and open new file tab 
+- 'Alt + n' will copy the filename from clipboard and open new file tab
 - 'Alt + b' will compile the code in current tab and genrate 'a'
 - 'Alt + r' will run a
 - 'Alt + e' will run the code with input
 - 'Alt + i' will copy input from clipboard
 - 'Alt + p' will paste the code in current tab with added '//' to your chosen line or word (Example: it replaces "open_file;" to "//open_file;" from template.)
-
+- 'Alt + m' will clear the terminal screen
+  
 Installation
 ------------
 * Manual
@@ -27,7 +28,7 @@ Installation
 
 Mappings
 ---------
-Copy this to you _vimrc
+Copy this to your _vimrc
 ```vim
 "this portion will compile code
 nnoremap <M-b> :call RabatCompileCode()<CR>
@@ -53,6 +54,9 @@ nnoremap <M-o> :call RabatOpenCode()<CR>
 "Create new filename by just copying(it sets the file name from clipboard),
 "use Alt + n
 nnoremap <M-n> :call RabatNewTab()<CR>
+
+"Clears the terminal screen, use Alt + m
+nnoremap <M-m> :call RabatClearTerminal()<CR>
 
 "optional the last window will not be a terminal
 "autocmd BufEnter * if winnr('$') == 1 && &buftype == 'terminal' | quit! | endif
