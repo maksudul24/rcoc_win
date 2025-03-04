@@ -1,24 +1,28 @@
-Requirments:
-vim editor and g++ compiler enabled windows command line. <br>
+rcoc
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/AnotherProksY/ez-window/blob/master/LICENSE)
+==========
+#### Requirments:
+- vim editor 8+ with terminal and g++ compiler enabled in windows command line.
+- Check typing ```g++ --version``` on command line
 
-Opertation:<br>
-Just copy and paste the "_vimrc" to _vimrc windows
+#### Opertation:
+- Just copy and paste the mapping in "_vimrc" in windows
 
 
 *Vim integration
+----------------
 
-1.'Alt + n' will copy the filename from clipboard and open new file tab <br>
-2.'Alt + b' will compile the code in current tab and genrate 'a'<br>
-3.'Alt + r' will run a<br>
-4.'Alt + e' will run the code with input<br>
-5.'Alt + i' will copy input from clipboard<br>
-6.'Alt + p' will paste the code in current tab with added //open_file <br>
+- 'Alt + n' will copy the filename from clipboard and open new file tab 
+- 'Alt + b' will compile the code in current tab and genrate 'a'
+- 'Alt + r' will run a
+- 'Alt + e' will run the code with input
+- 'Alt + i' will copy input from clipboard
+- 'Alt + p' will paste the code in current tab with added '//' to your chosen line or word (Example: it replaces "open_file;" to "//open_file;" from template.)
 
 Installation
 ------------
 * Manual
-  * Copy `plugin/rabat.vim` to `~/.vim/plugin`
-  * Download template.cpp
+  * Copy `plugin/rabat.vim` to `$HOME/vimfiles/plugin`
 
 
 Mappings
