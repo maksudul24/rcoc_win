@@ -35,11 +35,11 @@ function! RabatRunCode()
 endfunction
 
 
-function! RabatPasteCode()
+function! RabatPasteCode(old_word, new_word)
     let codename = expand('%')
     let code = readfile(codename)
     let codestring = join(code,"\n")
-    let newcode = substitute(codestring, 'open_file;', '//open_file;', 'g')
+    let newcode = substitute(codestring, a:old_word, a:new_word, 'g')
     call setreg('+', newcode)
     echo "Succesfully Copied to Clipboard"
 
