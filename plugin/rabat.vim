@@ -63,12 +63,14 @@ function! RabatOpenCode()
     let tabstrings = [getreg('+')]
     let tabname = join(tabstrings,'')
     let tabname = substitute(tabname,'\n','','g')
+    let tabname = substitute(tabname,'\v[|\/*"?<>]','','g')
+    let tabname = substitute(tabname, '\s\+$','', '') 
     let tabname = tabname . ".cpp"
 
     if !filereadable(tabname)
         let tempfile = "template.cpp"
         if !filereadable(tempfile)
-            call writefile('',tempfile)
+            call writefile([""],tempfile)
         endif
         let template_code = readfile(tempfile)
         call writefile(template_code,tabname)
@@ -85,12 +87,14 @@ function! RabatNewTab()
     let tabstrings = [getreg('+')]
     let tabname = join(tabstrings,'')
     let tabname = substitute(tabname,'\n','','g')
+    let tabname = substitute(tabname,'\v[|\/*"?<>]','','g')
+    let tabname = substitute(tabname, '\s\+$','', '') 
     let tabname = tabname . ".cpp"
 
     if !filereadable(tabname)
         let tempfile = "template.cpp"
         if !filereadable(tempfile)
-            call writefile('',tempfile)
+            call writefile([""],tempfile)
         endif
         let template_code = readfile(tempfile)
         call writefile(template_code,tabname)
