@@ -24,6 +24,8 @@ Installation
 ------------
 * Manual
   * Copy `plugin/rabat.vim` to `$HOME/vimfiles/plugin`
+* VimPlug
+  * `Plug "maksudul24/rcoc_win"`
 
 
 Mappings
