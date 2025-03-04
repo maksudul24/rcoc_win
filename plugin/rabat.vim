@@ -49,8 +49,7 @@ endfunction
 
 function! RabatCopyInput()
     let clipboard_content = split(getreg('+'), '\n')
-    let clipboard_content_with_newline = map(clipboard_content, 'v:val . "\n"')
-    call writefile(clipboard_content_with_newline, "input.txt")
+    call writefile(clipboard_content, "input.txt")
 endfunction
 
 
