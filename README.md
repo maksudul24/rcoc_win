@@ -28,7 +28,7 @@ Installation
 
 Mappings
 ---------
-Copy this to you _vimrc
+Copy this to your _vimrc
 ```vim
 "this portion will compile code
 nnoremap <M-b> :call RabatCompileCode()<CR>
