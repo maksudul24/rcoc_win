@@ -18,7 +18,6 @@ Installation
 ------------
 * Manual
   * Copy `plugin/rabat.vim` to `~/.vim/plugin`
-  * Download template.cpp
 
 
 Mappings
