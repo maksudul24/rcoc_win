@@ -1,5 +1,4 @@
 rcoc
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/AnotherProksY/ez-window/blob/master/LICENSE)
 ==========
 #### Requirments:
 - vim editor 8+ with terminal and g++ compiler enabled in windows command line.
@@ -24,6 +23,8 @@ Installation
 ------------
 * Manual
   * Copy `plugin/rabat.vim` to `$HOME/vimfiles/plugin`
+* VimPlug
+  * `Plug "maksudul24/rcoc_win"`
 
 
 Mappings
