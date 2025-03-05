@@ -5,7 +5,7 @@ rcoc
 - Check typing ```g++ --version``` on command line
 
 #### Opertation:
-- Just copy and paste the mapping in "_vimrc" in windows
+- Copy and paste the mapping in "_vimrc" for windows
 
 
 Vim integration
@@ -22,9 +22,11 @@ Vim integration
 Installation
 ------------
 * Manual
-  * Copy `plugin/rabat.vim` to `$HOME/vimfiles/plugin`
+  * Copy `plugin/rabat.vim` to `$HOME/vimfiles/plugin` (Windows)
 * VimPlug
   * `Plug "maksudul24/rcoc_win"`
+* Vundle
+  * `Plugin "maksudul24/rcoc_win"`
 
 
 Mappings
