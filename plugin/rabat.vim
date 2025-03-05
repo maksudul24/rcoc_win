@@ -19,6 +19,7 @@ function! RabatOpenTerminalRight()
         terminal++curwin
     else
         let buf = term_buffers[0]
+        call term_setkill(buf,"cls")
         call term_setkill(buf,"kill")
         call term_sendkeys(buf, "exit\<CR>")
     endif
