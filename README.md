@@ -29,7 +29,7 @@ Installation
 * VimPlug
   * `Plug "maksudul24/rcoc_win"`
 * Vundle
- * `Plugin "maksudul24/rcoc_win"`
+  * `Plugin "maksudul24/rcoc_win"`
 
 
 Mappings
