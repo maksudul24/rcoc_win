@@ -18,6 +18,13 @@ function! RabatOpenTerminalRight()
 endfunction
 
 
+function! RabatCloseTerminal()
+    let term_buffers = term_list()
+    call term_setkill(buf,"kill")
+    call term_sendkeys(buf, "exit\<CR>")
+endfunction
+
+
 
 
 function! RabatRunCodeWithInput()
