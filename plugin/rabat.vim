@@ -12,19 +12,17 @@ function! RabatGetTerminalBuffer()
 endfunction
 
 function! RabatOpenTerminalRight()
-    botright vsplit
-    vertical resize 40
-    terminal++curwin
-endfunction
-
-
-function! RabatCloseTerminal()
     let term_buffers = term_list()
-    call term_setkill(buf,"kill")
-    call term_sendkeys(buf, "exit\<CR>")
+    if empty(term_buffers)
+        botright vsplit
+        vertical resize 40
+        terminal++curwin
+    else
+        let buf = term_buffers[0]
+        call term_setkill(buf,"kill")
+        call term_sendkeys(buf, "exit\<CR>")
+    endif
 endfunction
-
-
 
 
 function! RabatRunCodeWithInput()
