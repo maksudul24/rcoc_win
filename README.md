@@ -25,7 +25,7 @@ Installation
 ------------
 * Manual
   * Copy `plugin/rabat.vim` to `$HOME/vimfiles/plugin` (Windows)
-  * Copy `plugin/rabat.vim` to `~/.vim/plugin (linux)
+  * Copy `plugin/rabat.vim` to `~/.vim/plugin` (linux)
 * VimPlug
   * `Plug "maksudul24/rcoc_win"`
 * Vundle
