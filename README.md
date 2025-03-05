@@ -2,10 +2,12 @@ rcoc
 ==========
 #### Requirments:
 - vim editor 8+ with terminal and g++ compiler enabled in windows command line.
+- install g++ for linux if not available
 - Check typing ```g++ --version``` on command line
 
 #### Opertation:
-- Just copy and paste the mapping in "_vimrc" in windows
+- Copy and paste the mapping in "_vimrc" for windows
+- Copy and paste the mapping in "~/.vimrc" for linux
 
 
 Vim integration
@@ -22,9 +24,12 @@ Vim integration
 Installation
 ------------
 * Manual
-  * Copy `plugin/rabat.vim` to `$HOME/vimfiles/plugin`
+  * Copy `plugin/rabat.vim` to `$HOME/vimfiles/plugin` (Windows)
+  * Copy `plugin/rabat.vim` to `~/.vim/plugin (linux)
 * VimPlug
   * `Plug "maksudul24/rcoc_win"`
+* Vundle
+ * `Plugin "maksudul24/rcoc_win"`
 
 
 Mappings
