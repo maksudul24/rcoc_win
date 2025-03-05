@@ -22,8 +22,14 @@ endfunction
 
 function! RabatRunCodeWithInput()
     let buf = RabatGetTerminalBuffer()
-    call term_sendkeys(buf,"type input.txt\<CR>")
-    call term_sendkeys(buf, "a\<CR>")
+    if has('win32') || has('win64')
+        call term_sendkeys(buf,"type input.txt\<CR>")
+        call term_sendkeys(buf, "a\<CR>")
+    endif
+    if has('linux')
+        call term_sendkeys(buf,"cat input.txt\<CR>")
+        call term_sendkeys(buf, "./a\<CR>")
+    endif
 endfunction
 
 
@@ -31,7 +37,12 @@ endfunction
 
 function! RabatRunCode()
     let buf = RabatGetTerminalBuffer()
-    call term_sendkeys(buf, "a\<CR>")
+    if has('win32') || has('win64')
+        call term_sendkeys(buf, "a\<CR>")
+    endif
+    if has('linux')
+        call term_sendkeys(buf, "./a\<CR>")
+    endif
 endfunction
 
 
