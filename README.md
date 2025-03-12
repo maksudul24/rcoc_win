@@ -1,4 +1,5 @@
 rcoc
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/maksudul24/rcoc_win/blob/main/LICENSE)
 ==========
 #### Requirments:
 - vim editor 8+ with terminal and g++ compiler enabled in windows command line.
