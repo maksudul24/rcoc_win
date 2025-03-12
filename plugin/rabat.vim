@@ -123,7 +123,7 @@ endfunction
 
 function! RabatCompileCode(compiler_cmd)
         let tabname = expand('%')
-        let instruction = compiler_cmd . " \"" . tabname . "\" -o a\<CR>"
+        let instruction = a:compiler_cmd . " \"" . tabname . "\" -o a\<CR>"
         call term_sendkeys(buf,instruction)
 endfunction
 
