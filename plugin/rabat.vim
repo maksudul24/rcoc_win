@@ -122,8 +122,8 @@ endfunction
 
 
 function! RabatCompileCode(compiler_cmd)
-        let buf = RabatGetTerminalBuffer()
         let tabname = expand('%')
+        let buf = RabatGetTerminalBuffer()
         let instruction = a:compiler_cmd . " \"" . tabname . "\" -o a\<CR>"
         call term_sendkeys(buf,instruction)
 endfunction
