@@ -121,12 +121,9 @@ function! RabatNewTab()
 endfunction
 
 
-
-
-function! RabatCompileCode()
+function! RabatCompileCode(compiler_cmd)
         let tabname = expand('%')
-        let buf = RabatGetTerminalBuffer()
-        let instruction = "g++ -std=c++17 \"" . tabname . "\" -o a\<CR>"
+        let instruction = compiler_cmd . " \"" . tabname . "\" -o a\<CR>"
         call term_sendkeys(buf,instruction)
 endfunction
 
