@@ -34,8 +34,8 @@ Mappings
 ---------
 Copy this to your _vimrc
 ```vim
-"this portion will compile code
-nnoremap <M-b> :call RabatCompileCode()<CR>
+"this portion will compile code for "g++"
+nnoremap <M-b> :call RabatCompileCode("g++")<CR>
 
 "open the terminal right
 nnoremap <M-t> :call RabatOpenTerminalRight()<CR>
