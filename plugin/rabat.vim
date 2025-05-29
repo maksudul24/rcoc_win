@@ -92,11 +92,11 @@ function! RabatOpenCode()
         call writefile(template_code,tabname)
     endif
 
+    call writefile([tabname],'lastopenedfile.txt')
     let insturction = "tabnew " . tabname
     execute insturction
     tabprevious
     tabclose!
-    writefile([tabname],'lastopenedfile.txt')
 endfunction
 
 
@@ -117,9 +117,9 @@ function! RabatNewTab()
         call writefile(template_code,tabname)
     endif
 
+    call writefile([tabname],'lastopenedfile.txt')
     let insturction = "tabnew " . tabname
     execute insturction
-    writefile([tabname],'lastopenedfile.txt')
 endfunction
 
 
