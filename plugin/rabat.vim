@@ -96,6 +96,7 @@ function! RabatOpenCode()
     execute insturction
     tabprevious
     tabclose!
+    writefile([tabname],'lastopenedfile.txt')
 endfunction
 
 
@@ -118,6 +119,7 @@ function! RabatNewTab()
 
     let insturction = "tabnew " . tabname
     execute insturction
+    writefile([tabname],'lastopenedfile.txt')
 endfunction
 
 
@@ -135,5 +137,16 @@ function! RabatClearTerminal()
       let buf = term_buffers[0]
       call term_sendkeys(buf,"cls\<CR>")
   endif
+endfunction
+
+function! RabatLastOpenedFile() 
+    let file = readfile('lastopenedfile.txt')
+    if !empty(file)
+        let tabname = file[0]
+        let insturction = "tabnew " . tabname
+        execute insturction
+        tabprevious
+        tabclose!
+    endif
 endfunction
 
