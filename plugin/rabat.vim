@@ -133,7 +133,13 @@ function! RabatClearTerminal()
 
   if !empty(term_buffers)
       let buf = term_buffers[0]
-      call term_sendkeys(buf,"cls\<CR>")
+     
+      if has('win32') || has('win64')
+          call term_sendkeys(buf,"cls\<CR>")
+      endif
+      if has('linux')
+          call term_sendkeys(buf,"clear\<CR>")
+      endif
   endif
 endfunction
 
