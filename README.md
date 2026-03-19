@@ -37,7 +37,7 @@ Notes
 * For Linux '+clipboard' is required in vim to run this plugin:
   * Ubuntu/Debian: `sudo apt install vim-gtk3`
   * Arch Linux: `sudo pacman -S gvim`
-* Carefull about the mapings in linux 'Alt' may be used in the terminal so replace '<M-x>' with '<C-x>' to use 'Ctrl' instead.
+* Carefull about the mapings in linux 'Alt' may be used in the terminal so replace '\<M-x\>' with '\<C-x\>' to use 'Ctrl' instead.
   
 Mappings
 ---------
