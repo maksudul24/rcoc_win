@@ -41,7 +41,7 @@ Notes
   
 Mappings
 ---------
-Copy this to your _vimrc
+Copy this to your _vimrc or .vimrc
 ```vim
 "this portion will compile code for "g++"
 nnoremap <M-b> :call RabatCompileCode("g++")<CR>
