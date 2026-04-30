@@ -19,7 +19,12 @@ function! RabatOpenTerminalRight()
         terminal++curwin
     else
         let buf = term_buffers[0]
-        call term_sendkeys(buf,"cls\<CR>")
+        if has('win32') || has('win64')
+          call term_sendkeys(buf,"cls\<CR>")
+        endif
+        if has('linux')
+            call term_sendkeys(buf,"clear\<CR>")
+        endif
         call term_setkill(buf,"kill")
         call term_sendkeys(buf, "exit\<CR>")
     endif
