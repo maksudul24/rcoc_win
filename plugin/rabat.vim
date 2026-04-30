@@ -148,3 +148,23 @@ function! RabatClearTerminal()
   endif
 endfunction
 
+function! RabatDeleteFile()
+    let file_name = expand('%')
+    let ara = []
+    call add(ara, file_name)
+    call add(ara, file_name . '~')
+    call add(ara, '.' . file_name . '.swp')
+    call add(ara, '.' . file_name . '.swo')
+    call add(ara, '.' . file_name . '.swn')
+    call add(ara, '.' . file_name . '.un~')
+
+    for file in ara
+        if filereadable(file)
+            call delete(file)
+        endif
+    endfor
+
+endfunction
+
+
+
